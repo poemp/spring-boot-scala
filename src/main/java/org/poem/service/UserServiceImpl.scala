@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service
 @Service
 class UserServiceImpl @Autowired()(val userDao: UserDao){
 
-  def save(user: User)={
+  def save(user: User) : Unit= {
     user.createdDate = new Date
     this.userDao.save(user)
   }
