@@ -1,5 +1,7 @@
 package org.poem.service
 
+import java.util.Date
+
 import org.poem.dao.UserDao
 import org.poem.entity.User
 import org.springframework.beans.factory.annotation.Autowired
@@ -9,6 +11,7 @@ import org.springframework.stereotype.Service
 class UserServiceImpl @Autowired()(val userDao: UserDao){
 
   def save(user: User)={
+    user.createdDate = new Date
     this.userDao.save(user)
   }
 
