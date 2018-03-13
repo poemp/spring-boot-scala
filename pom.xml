@@ -62,6 +62,12 @@
             <artifactId>scala-library</artifactId>
             <version>${scala.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-maven-plugin</artifactId>
+            <version>3.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -99,14 +105,7 @@
                         </launcher>
                     </launchers>
                 </configuration>
-                <dependencies>
-                    <!-- spring热部署-->
-                    <dependency>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>springloaded</artifactId>
-                        <version>1.2.6.RELEASE</version>
-                    </dependency>
-                </dependencies>
+
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
