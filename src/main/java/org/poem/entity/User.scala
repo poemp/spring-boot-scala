@@ -30,11 +30,11 @@ class User {
     * 年龄
     */
   @BeanProperty
-  var  age :Integer = _
+  var age: Integer = _
 
   /**
     * 创建的日期
     */
   @BeanProperty
-  var createdDate:Date = _
+  var createdDate: Date = _
 }
